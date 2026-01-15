@@ -1,0 +1,10 @@
+name: New test workflow
+on:
+  pull_request:
+    types: [closed]
+permissions:
+  pull-requests: write
+jobs:
+  test:
+    name: Test Workflow run comment
+    runs-on: ubuntu-latest
